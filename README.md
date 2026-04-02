@@ -52,38 +52,39 @@ This approach ensures that infrastructure changes are validated in a controlled 
 
 Clone the repository:
 
-```bash
 git clone https://github.com/Aishhh-27/infra-testing-suite-terratest.git
 cd infra-testing-suite-terratest
 
+
 Initialize Go modules:
 go mod tidy
+
 
 **Running Tests**
 
 Execute the test suite:
 go test ./tests -v
 
-Example Output
+**Example Output**
 
 
 === RUN   TestTerraformAndK8s
 --- PASS: TestTerraformAndK8s
 PASS
 
-Technologies Used
+**Technologies Used**
 Go
 Terratest
 Terraform
 Kubernetes (client-go)
 
-Use Cases
+**Use Cases**
 Validating infrastructure changes before deployment
 Testing Terraform modules in CI/CD pipelines
 Preventing configuration drift in Kubernetes environments
 Building reliable infrastructure automation workflows
 
-Notes
+**Notes**
 The test uses a local kubeconfig file for cluster access
 Ensure your Kubernetes cluster is running before executing tests
 Terraform state is managed locally for simplicity
@@ -93,5 +94,5 @@ Support for multiple environments (dev, staging, production)
 Additional validation for deployments and services
 Parameterized tests for reusable infrastructure modules
 
-Author
+**Author**
 Aishwarya Ganesh
